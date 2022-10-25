@@ -364,7 +364,7 @@ display(dbutils.fs.ls("s3a://databricks-field-eng-audit-logs/e2-demo-field-eng")
 
 # COMMAND ----------
 
-# DBTITLE 1,Ingest the row JSON from the audit log service as our bronze table
+# DBTITLE 1,Ingest the raw JSON from the audit log service as our bronze table
 from pyspark.sql.functions import udf, col, from_unixtime, from_utc_timestamp, from_json, map_filter
 
 def ingest_audit_log():
