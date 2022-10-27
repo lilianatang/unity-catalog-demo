@@ -1,1 +1,0 @@
-# unity-catalog-for-dealership
